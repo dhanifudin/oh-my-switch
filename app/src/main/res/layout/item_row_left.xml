@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	style="@style/CardContainer">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		>
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_percent="0.25" />
+
+		<ImageView
+			style="@style/ImageContent"
+			android:id="@+id/avatar_image"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/guideline"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:srcCompat="@tools:sample/avatars" />
+
+		<TextView
+			style="@style/TextTitle"
+			android:id="@+id/title_text"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/guideline"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:text="Cherry MX Blue" />
+
+		<TextView
+			style="@style/TextSubtitle"
+			android:id="@+id/subtitle_text"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/guideline"
+			app:layout_constraintTop_toBottomOf="@+id/title_text"
+			tools:text="Clicky and Noticeable" />
+
+		<TextView
+			style="@style/TextContent"
+			android:id="@+id/characteristic_text"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/guideline"
+			app:layout_constraintTop_toBottomOf="@+id/subtitle_text"
+			tools:text="Tactile switching" />
+
+		<TextView
+			style="@style/TextContent"
+			android:id="@+id/actuation_text"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/guideline"
+			app:layout_constraintTop_toBottomOf="@+id/characteristic_text"
+			tools:text="xx cN operating force" />
+
+		<TextView
+			style="@style/TextContent"
+			android:id="@+id/switching_point_text"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/guideline"
+			app:layout_constraintTop_toBottomOf="@+id/actuation_text"
+			tools:text="x.x mm pre travel" />
+
+		<TextView
+			style="@style/TextContent"
+			android:id="@+id/total_travel_text"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/guideline"
+			app:layout_constraintTop_toBottomOf="@+id/switching_point_text"
+			tools:text="x.x mm total travel" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

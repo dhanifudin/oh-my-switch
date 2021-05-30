@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">Oh My Switch</string>
+	<string name="about">About</string>
+	<string name="name">Dian Hanifudin Subhi</string>
+	<string name="email">dhanifudin@polinema.ac.id</string>
+	<string name="github">Github: dhanifudin</string>
+	<string name="repository">Source code can be access in <a href="https://github.com/dhanifudin/oh-my-switch">Oh My Switch Repository</a></string>
+</resources>
